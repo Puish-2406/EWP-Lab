@@ -1,0 +1,308 @@
+/* ================================
+   THE BITE BAR - GLOBAL STYLES
+   Week 3 - CSS
+================================ */
+
+/* ---------- General ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #17120f;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: #0f0b09;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 2px solid #e88b22;
+}
+
+header h1 {
+    margin: 0;
+    color: #f39a2f;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #dddddd;
+    margin: 8px 0 20px;
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f39a2f;
+}
+
+
+/* ---------- Main Content ---------- */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #f39a2f;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #dddddd;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+    color: #f39a2f;
+}
+
+a:hover {
+    color: #ffc266;
+}
+
+
+/* ---------- Tables ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #211914;
+}
+
+th {
+    background-color: #e88b22;
+    color: #17120f;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 14px;
+    border: 1px solid #4b3728;
+    color: #eeeeee;
+}
+
+tr:hover {
+    background-color: #2d211a;
+}
+
+
+/* ---------- Lists ---------- */
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin: 10px 0;
+    color: #dddddd;
+}
+
+
+/* ---------- Forms ---------- */
+
+form {
+    margin: 20px auto;
+}
+
+form table {
+    max-width: 650px;
+    background-color: #211914;
+    border: 1px solid #4b3728;
+    border-radius: 8px;
+}
+
+form td {
+    padding: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+
+/* ---------- Input Fields ---------- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #6b4a32;
+    border-radius: 5px;
+    background-color: #120e0c;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f39a2f;
+    box-shadow: 0 0 5px rgba(243, 154, 47, 0.4);
+}
+
+
+/* ---------- Radio and Checkbox ---------- */
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #f39a2f;
+}
+
+
+/* ---------- Buttons ---------- */
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 11px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"] {
+    background-color: #e88b22;
+    color: #17120f;
+}
+
+input[type="reset"] {
+    background-color: #4b3728;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffae4d;
+    transform: translateY(-2px);
+}
+
+input[type="reset"]:hover {
+    background-color: #654a38;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #0f0b09;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 30px;
+    border-top: 2px solid #e88b22;
+}
+
+footer h3 {
+    color: #f39a2f;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #bbbbbb;
+}
+
+
+/* ---------- Horizontal Lines ---------- */
+
+hr {
+    border: none;
+    border-top: 1px solid #4b3728;
+}
+
+
+/* ---------- Centered Content ---------- */
+
+center {
+    display: block;
+}
+
+
+/* ---------- Mobile Responsive Design ---------- */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 25px 10px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+
+    form table {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%;
+    }
+}
